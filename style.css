@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #141414;
+}
+
+.wrapper {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item {
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.one {
+  width: 50px;
+  height: 250px;
+  background: white;
+  border-radius: 30px;
+}
+
+.zero {
+  width: 120px;
+  height: 250px;
+  border-radius: 70px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zero-inner {
+  width: 40px;
+  height: 150px;
+  border-radius: 50px;
+  background: #141414;
+}
+
+button {
+  width: 200px;
+  height: 60px;
+  margin: 30px;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 40px;
+  cursor: pointer;
+  border: solid 2px white;
+  border-radius: 10px;
+  background: none;
+  color: white;
+}
+
+button img {
+  width: 35px;
+  animation: shake 1s forwards infinite;
+}
+
+@keyframes shake {
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+.flash {
+  background: yellow;
+}
