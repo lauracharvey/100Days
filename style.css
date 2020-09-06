@@ -20,7 +20,7 @@ body {
   position: absolute;
   left: 50%;
   top: -20px;
-  animation: confetti 5s ease-in-out -2s;
+  animation: confetti 5s ease-in-out -2s infinite;
   animation-play-state: paused; 
 }
 
