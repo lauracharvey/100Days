@@ -36,3 +36,12 @@ function zeroTwoMagicFunction () {
 
   document.getElementById("zero2").style.backgroundColor = randomColor;
 }
+
+function confetti () {
+
+  let confetti = document.getElementsByClassName("confetti");
+  
+  for (let i = 0; i < confetti.length; i++){
+    confetti[i].style.animationPlayState = "running";
+  }
+}

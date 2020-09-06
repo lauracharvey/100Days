@@ -13,6 +13,145 @@ body {
   background: #141414;
 }
 
+.confetti {
+  width: 15px;
+  height: 15px;
+  background: #f2d74e;
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  animation: confetti 5s ease-in-out -2s;
+  animation-play-state: paused; 
+}
+
+.confetti:nth-child(1) {
+  background: #f2d74e;
+  left: 5%;
+  animation-delay: 0s;
+}
+
+.confetti:nth-child(2) {
+  background: #5985c0;
+  left: 10%;
+  animation-delay: 1s;
+}
+
+.confetti:nth-child(3) {
+  background: #ca7196;
+  left: 15%;
+  animation-delay: 2s;
+}
+
+.confetti:nth-child(4) {
+  background: #f2d74e;
+  left: 20%;
+  animation-delay: 5s;
+}
+
+.confetti:nth-child(5) {
+  background: #5985c0;
+  left: 25%;
+  animation-delay: 2.5s;
+}
+
+.confetti:nth-child(6) {
+  background: #ca7196;
+  left: 30%;
+  animation-delay: 4s;
+}
+
+.confetti:nth-child(7) {
+  background: #f2d74e;
+  left: 35%;
+  animation-delay: 1.5s;
+}
+
+.confetti:nth-child(8) {
+  background: #5985c0;
+  left: 40%;
+  animation-delay: 6s;
+}
+
+.confetti:nth-child(9) {
+  background: #ca7196;
+  left: 45%;
+  animation-delay: 2s;
+}
+
+.confetti:nth-child(10) {
+  background: #f2d74e;
+  left: 50%;
+  animation-delay: 3s;
+}
+
+.confetti:nth-child(11) {
+  background: #5985c0;
+  left: 55%;
+  animation-delay: 4s;
+}
+
+.confetti:nth-child(12) {
+  background: #ca7196;
+  left: 60%;
+  animation-delay: 6s;
+}
+
+.confetti:nth-child(13) {
+  background: #f2d74e;
+  left: 65%;
+  animation-delay: 1s;
+}
+
+.confetti:nth-child(14) {
+  background: #5985c0;
+  left: 70%;
+  animation-delay: 2s;
+}
+
+.confetti:nth-child(15) {
+  background: #ca7196;
+  left: 75%;
+  animation-delay: 7s;
+}
+
+.confetti:nth-child(16) {
+  background: #f2d74e;
+  left: 80%;
+  animation-delay: 1.25s;
+}
+
+.confetti:nth-child(17) {
+  background: #5985c0;
+  left: 85%;
+  animation-delay: 7.5s;
+}
+
+.confetti:nth-child(18) {
+  background: #ca7196;
+  left: 90%;
+  animation-delay: 1s;
+}
+
+.confetti:nth-child(19) {
+  background: #f2d74e;
+  left: 95%;
+  animation-delay: 4s;
+}
+
+.confetti:nth-child(20) {
+  background: #5985c0;
+  left: 100%;
+  animation-delay: 6.5s;
+}
+
+@keyframes confetti {
+  0% { transform: rotateZ(15deg) rotateY(0deg) translate(0,0);}
+  25% { transform: rotateZ(5deg) rotateY(360deg) translate(-5vw,20vh);}
+  50% { transform: rotateZ(15deg) rotateY(720deg) translate(5vw,60vh);}
+  75% { transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw,80vh);}
+  100% { transform: rotateZ(15deg) rotateY(1440deg) translate(10vw,110vh);}
+}
+
 .wrapper {
   width: 600px;
   display: flex;
@@ -22,12 +161,16 @@ body {
 }
 
 .flex-item {
-  width: 200px;
+  width: 160px;
   height: 300px;
   margin: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#one-div {
+  width: 120px;
 }
 
 .one {
@@ -80,4 +223,24 @@ button img {
 
 .flash {
   background: yellow;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .one {
+    width: 40px;
+  }
+
+  .zero {
+    width: 100px;
+  }
+
+  .zero-inner {
+    width: 30px;
+  }
 }
