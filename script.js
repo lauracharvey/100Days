@@ -37,11 +37,15 @@ function zeroTwoMagicFunction () {
   document.getElementById("zero2").style.backgroundColor = randomColor;
 }
 
-function confetti () {
+let con = document.getElementsByClassName('confetti');
+let conArr = Array.from(con);
 
-  let confetti = document.getElementsByClassName("confetti");
-  
-  for (let i = 0; i < confetti.length; i++){
-    confetti[i].style.animationPlayState = "running";
-  }
+function confetti() {
+  conArr.forEach(function(c) {
+    c.style.animation = 'none';
+    c.offsetHeight;
+    c.style.animation = null;
+    c.classList.add('confetti');
+    c.style.animationPlayState = 'running';
+  });
 }
